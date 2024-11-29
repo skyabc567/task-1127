@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var n = prompt("请输入一串字符");
+    var msg = n.split("-");
+    var x = msg.slice(0, 1);
+    var y = x.join("");
+    var arr = msg.slice(0,-1);
+    var arr1 = arr.join("");
+    var arr2 = arr1.toUpperCase();
+    var result = y + arr2;
+    alert("-号后的字母全部大写：" + result);
+</script>
+</html>

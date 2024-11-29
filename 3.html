@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var n = prompt("请输入一串字符串");
+    var msg = n.split("");
+    var result = "";
+    for(var i = 0; i < n.length; i++) {
+        if(msg[i].charCodeAt() >= 65 && msg[i].charCodeAt() <= 90) {
+            msg[i] = msg[i].toLowerCase();
+        } else {
+            msg[i] = msg[i].toUpperCase();
+        }
+        result += msg[i];
+    }
+    alert("字符串中字母大小写反向为：" + result);
+</script>
+</html>

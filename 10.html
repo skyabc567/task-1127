@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var n = prompt("请输入一个字符串");
+    var strat = 0;
+    var end = n.length - 1;
+
+    while(n[strat] == " ") {
+        strat++;
+    }
+
+    while(n[end] == " "){
+        end--;
+    }
+    console.log(strat , end + 1);
+    console.log("%c" + n.slice(strat , end + 1) , "background: red;");
+</script>
+</html>

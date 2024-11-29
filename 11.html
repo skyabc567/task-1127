@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    
+    while(true) {
+        var n = prompt("请输入你的手机号");
+        if(Number(n) && String(n).length == 11) {
+            var msg = n.slice(0 , 3) + "****" + n.slice(7 , n.length);
+            alert(msg);
+            break;
+        } else {
+            alert("您输入的是无效号码请重新输入");
+        }
+    }
+    
+</script>
+</html>

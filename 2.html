@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var msg = prompt("请输入一个以下划线命名法的字符串")
+    var result = "";
+    var arr = msg.split("_");
+    for(var i = 0; i < arr.length; i++) {
+        console.log(arr[i]);
+        var temp = "";
+        for(var j = 0; j < arr[i].length; j++) {
+            if(j == 0) {
+                temp += arr[i][j].toUpperCase();
+            } else {
+                temp += arr[i][j];
+            }
+        }
+        result += temp;
+    }
+    alert("转换为帕斯卡命名法为：" + result);
+</script>
+</html>
